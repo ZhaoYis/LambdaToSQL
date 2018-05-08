@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaToSQL", "LambdaToSQL\LambdaToSQL.csproj", "{A15BC6FF-8DEF-49EF-94B8-0D549C5C6071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{66009239-FEF6-4B6C-890E-BDF23898D2E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A15BC6FF-8DEF-49EF-94B8-0D549C5C6071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15BC6FF-8DEF-49EF-94B8-0D549C5C6071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15BC6FF-8DEF-49EF-94B8-0D549C5C6071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15BC6FF-8DEF-49EF-94B8-0D549C5C6071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66009239-FEF6-4B6C-890E-BDF23898D2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66009239-FEF6-4B6C-890E-BDF23898D2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66009239-FEF6-4B6C-890E-BDF23898D2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66009239-FEF6-4B6C-890E-BDF23898D2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E18872E3-42C2-4A10-90E5-9A349BF057B0}
+	EndGlobalSection
+EndGlobal
