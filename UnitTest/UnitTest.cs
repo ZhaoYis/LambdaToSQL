@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using LambdaToSQL;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -18,9 +18,15 @@ namespace UnitTest
             Console.WriteLine("Where：" + lambda.Where() + "，OrderBy：" + lambda.OrderBy());
             Console.WriteLine("=========================================================");
 
+            UserEntity user = new UserEntity
+            {
+                Id = 1
+            };
+
             lambda = new LambdaExpConditions<UserEntity>();
-            lambda.AddAndWhere(false, u => u.Id != 1 && u.IsEnable == false, u => u.Id == 1 && u.IsEnable == false);
-            Console.WriteLine("Where：" + lambda.Where());
+            lambda.AddAndWhere(() => { return user.Id > 1; }, u => u.UserName.Contains("大师兄") && u.IsEnable == false, u => u.UserName == "大师兄" && u.IsEnable == false);
+            lambda.AddOrderBy(u => u.Id);
+            Console.WriteLine("Where：" + lambda.Where() + "，OrderBy：" + lambda.OrderBy());
             Console.WriteLine("=========================================================");
         }
     }
